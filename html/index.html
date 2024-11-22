@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obra Social</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <!-- Botón para el perfil de usuario (izquierda) -->
+        <a class="navbar-brand" href="../php/perfil.php">Mi Perfil</a>
+
+        <!-- Botón central para "Obra Social" -->
+        <a class="navbar-brand mx-auto" href="#">Obra Social</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="../php/afiliacion.php">Afiliación</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/cartilla.html">Cartilla Médica</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/beneficios.html">Beneficios</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/index.html#contacto">Contacto</a></li>
+
+                <!-- Sesión -->
+                <li class="nav-item">
+                  <div id="sessionControl">
+                    <!-- Este contenido se actualizará dinámicamente desde el script -->
+                    <button class="btn btn-outline-dark" onclick="redirectToLogin()">Iniciar Sesión</button>
+                  </div>
+                </li>
+                <li class="nav-item admin-only" style="display: none;">
+                  <a class="nav-link" href="/php/admin_dashboard.php">Administración</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1>Bienvenido a nuestra Obra Social</h1>
+    <p class="lead" id="welcomeMessage">Tu salud, nuestra prioridad</p>
+  </div>
+</header>
+
+
+  <section id="carrusel" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Galería</h2>
+      <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/imagen1.jpg" class="d-block w-100" alt="Salud Integral">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/images.jpeg" class="d-block w-100" alt="Atención Personalizada">
+          </div>
+          <div class="carousel-item">
+            <img src="../img/3.jpeg" class="d-block w-100" alt="Bienestar para Todos">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="afiliacion" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Afiliación</h2>
+      <p>Conoce nuestras opciones para afiliarte y disfruta de nuestros servicios.</p>
+    </div>
+  </section>
+
+  <section id="cartilla" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Cartilla Médica</h2>
+      <p>Accede a la cartilla médica con todos nuestros prestadores disponibles.</p>
+    </div>
+  </section>
+
+  <section id="beneficios" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Beneficios</h2>
+      <p>Descubre los programas y servicios exclusivos para nuestros afiliados.</p>
+    </div>
+  </section>
+
+  <section id="contacto" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Contacto</h2>
+      <p>Estamos aquí para ayudarte. Contáctanos para cualquier consulta.</p>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-light pt-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <h5>Sobre Nosotros</h5>
+                <p>Somos una obra social comprometida en ofrecer atención de calidad para todos nuestros afiliados.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light">Inicio</a></li>
+                    <li><a href="../html/afiliacion.html" class="text-light">Quiero Afiliarme</a></li>
+                    <li><a href="../html/beneficios.html" class="text-light">Beneficios</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>Contacto</h5>
+                <p><strong>Teléfono:</strong> +123 456 789</p>
+                <p><strong>Email:</strong> atencion@obrasocial.com</p>
+                <p><strong>Dirección:</strong> Calle Salud 123, Ciudad</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h5>Síguenos</h5>
+                <div class="d-flex">
+                    <a href="#" class="mr-3"><img src="../img/facebook-icon.png" alt="Facebook" width="30"></a>
+                    <a href="#" class="mr-3"><img src="../img/instagram-icon.png" alt="Instagram" width="30"></a>
+                    <a href="#"><img src="../img/x-logo.png" alt="Twitter" width="30"></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3">
+            <small>&copy; 2024 Obra Social. Todos los derechos reservados.</small>
+        </div>
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

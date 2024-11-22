@@ -1,0 +1,77 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #007bff;
+    padding: 1rem;
+  }
+  .navbar-brand, .nav-link {
+    color: white !important;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #e0e0e0 !important;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(to right, #007bff, #6db3f2);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  /* Sections */
+  section {
+    padding: 3rem 1rem;
+  }
+  .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  .bg-light {
+    background-color: #f8f9fa;
+  }
+  
+  /* Carrusel */
+  #carrusel .container {
+    max-width: 800px;
+  }
+  .carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #007bff;
+    border-radius: 50%;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #aaa;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  footer a {
+    color: #6db3f2;
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

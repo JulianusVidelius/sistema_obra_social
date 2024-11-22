@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartilla Médica</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../html/index.html">Obra Social</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../html/afiliacion.html">Afiliación</a></li>
+          <li class="nav-item"><a class="nav-link active" href="../html/cartilla.html">Cartilla Médica</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/beneficios.html">Beneficios</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1>Cartilla Médica</h1>
+      <p class="lead">Encuentra los mejores prestadores cerca de ti</p>
+    </div>
+  </header>
+
+  <section class="py-3 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-3">Busca un Prestador</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Buscar por nombre, especialidad o localidad">
+        </div>
+        <div class="col-md-6">
+          <button type="submit" class="btn btn-primary w-100">Buscar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Nuestros Prestadores</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Dirección</th>
+            <th>Teléfono</th>
+            <th>Especialidades</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hospital Central</td>
+            <td>Av. Principal 123, Centro</td>
+            <td>123-456-7890</td>
+            <td>Medicina General, Pediatría, Cardiología</td>
+          </tr>
+          <tr>
+            <td>Clínica Santa Fe</td>
+            <td>Calle Salud 456, Norte</td>
+            <td>234-567-8901</td>
+            <td>Ginecología, Traumatología, Dermatología</td>
+          </tr>
+          <tr>
+            <td>Consultorios Privados López</td>
+            <td>Calle Doctor 789, Oeste</td>
+            <td>345-678-9012</td>
+            <td>Odontología, Psicología</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Beneficios Adicionales</h2>
+      <p>Todos nuestros prestadores cuentan con los estándares más altos de calidad, atención personalizada y horarios flexibles.</p>
+      <p class="mb-0">Si necesitas ayuda para seleccionar un prestador, no dudes en contactarnos.</p>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-light pt-4 mt-5">
+    <div class="container">
+      <div class="text-center py-3">
+        <small>&copy; 2024 Obra Social. Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
